@@ -5,7 +5,12 @@ import java.util.List;
 public class Main {
 
   public static void main(String[] args) {
-    System.out.println(joiner(new ArrayList<>(Arrays.asList("first", "second", "third")), "b"));
+    List<String> thingsToJoin = new ArrayList<>(Arrays.asList("first", "second", "third"));
+
+    System.out.println(joiner(thingsToJoin, "b"));
+
+    Version2 version2 = new Version2(thingsToJoin);
+    System.out.println(version2.joiner("a"));
   }
 
   public static String joiner(List<String> stringsToJoin, String separator) {
