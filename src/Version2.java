@@ -9,9 +9,9 @@ public class Version2 {
   private List<String> thingsToJoin;
 
   public String joiner(String separator) {
-    String joinedString = "original";
+    String joinedString = "";
     for (String str : thingsToJoin) {
-      if (joinedString.equals("original")) {
+      if (joinedString.equals("")) {
         joinedString = str;
       } else {
         joinedString += separator + str;

@@ -13,9 +13,9 @@ public class Main {
   }
 
   public static String joiner(List<String> stringsToJoin, String separator) {
-    String joinedString = "original";
+    String joinedString = "";
     for (String str : stringsToJoin) {
-      if (joinedString.equals("original")) {
+      if (joinedString.equals("")) {
         joinedString = str;
       } else {
         joinedString += separator + str;
