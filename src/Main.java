@@ -1,11 +1,10 @@
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class Main {
 
   public static void main(String[] args) {
-    List<String> thingsToJoin = new ArrayList<>(Arrays.asList("first", "second", "third"));
+    List<String> thingsToJoin = Arrays.asList("first", "second", "third");
 
     System.out.println(joiner(thingsToJoin, "b"));
 
